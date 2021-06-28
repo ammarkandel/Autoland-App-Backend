@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+  username: devrails
+  host: localhost
+  password: <%= ENV['BOOK_APPOINTMENT_DATABASE_PASSWORD'] %>
+
+development:
+  <<: *default
+  database: book_appointment_development
+
+test:
+  <<: *default
+  database: book_appointment_test
+
+production:
+  <<: *default
+  database: book_appointment_production
