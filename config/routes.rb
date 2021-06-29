@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
-  #post 'user_token' => 'user_token#create'
-  resources :users
+  resources :users, only: [:show, :create]
+  resources :appointments, only: [:index, :create]
+  resources :cars, only: [:index]
+
   scope '/auth' do
     post '/signin', to: 'user_token#create'
     post '/signup', to: 'users#create'
   end
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
