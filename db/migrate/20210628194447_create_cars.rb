@@ -6,7 +6,7 @@ class CreateCars < ActiveRecord::Migration[6.1]
       t.string :category
       t.integer :price
       t.integer :release_year
-      t.decimal :acceleration
+      t.string :speed
     end
   end
 end

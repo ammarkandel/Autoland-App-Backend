@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2021_06_28_211011) do
     t.string "category"
     t.integer "price"
     t.integer "release_year"
-    t.decimal "acceleration"
+    t.string "speed"
   end
 
   create_table "users", force: :cascade do |t|
