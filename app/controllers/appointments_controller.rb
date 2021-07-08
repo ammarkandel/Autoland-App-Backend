@@ -1,5 +1,4 @@
 class AppointmentsController < ApplicationController
-  before_action :authenticate_user
   # GET /appointments
   def index
     @appointments = Appointment.all
@@ -9,7 +8,6 @@ class AppointmentsController < ApplicationController
 
   def create
     @appointment = Appointment.new(appointment_params)
-    #@appointment.user_id = current_user.id
 
     if @appointment.save
       render json: @appointment, status: :created
