@@ -2,7 +2,11 @@ require 'rails_helper'
 
 RSpec.describe Car, type: :model do
   context 'Test car validation' do
-    it 'Nmae should presence' do
+    it 'Car should have many appointments' do
+      should have_many(:appointments)
+    end
+
+    it 'Name should presence' do
       should validate_presence_of(:name)
     end
 
