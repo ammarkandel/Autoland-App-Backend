@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
- context 'Test user model' do
+ context 'Test user model validation' do
    it 'User should have many appointments' do
      should have_many(:appointments)
    end
