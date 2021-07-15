@@ -1,5 +1,4 @@
 class AppointmentsController < ApplicationController
-  # GET /appointments
   def index
     @appointments = Appointment.all
 
