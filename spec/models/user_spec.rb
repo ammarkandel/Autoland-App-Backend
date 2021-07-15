@@ -19,9 +19,9 @@ RSpec.describe User, type: :model do
    end
 
    it 'Test the email format' do
-     should allow_value("email@addresse.test").for(:email)
-     should_not allow_value("email@addressetest").for(:email)
-     should_not allow_value("emailaddressetest").for(:email)
+     should allow_value('email@addresse.test').for(:email)
+     should_not allow_value('email@addressetest').for(:email)
+     should_not allow_value('emailaddressetest').for(:email)
    end
  end
 end
