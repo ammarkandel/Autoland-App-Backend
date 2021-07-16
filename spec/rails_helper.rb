@@ -37,8 +37,8 @@ Shoulda::Matchers.configure do |config|
 end
 
 begin
-ActiveRecord::Migration.maintain_test_schema!
-rescue ActiveRecord::PendingMigrationError => e
+  ActiveRecord::Migration.maintain_test_schema!
+  rescue ActiveRecord::PendingMigrationError => e
   puts e.to_s.strip
   exit 1
 end

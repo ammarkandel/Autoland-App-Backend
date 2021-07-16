@@ -17,7 +17,7 @@ RSpec.describe 'Appointments', type: :request do
 
   describe 'POST appointments' do
     before do
-      post '/appointments.json', params: { appointment:{ date: '2/6/1999', time: '12:10', car_id: 1, user_id: 1 } }
+      post '/appointments.json', params: { appointment: { date: '2/6/1999', time: '12:10', car_id: 1, user_id: 1 } }
     end
 
     it 'returns the date' do
