@@ -17,6 +17,10 @@
 - Run `rails server`
 - Go to `http:localhost:3001`
 
+## Front end repo
+
+`https://github.com/ammarkandel/Autoland-App-Frontend`
+
 ## Test-driven development RSPEC
 
 The code includes unit testing using RSpec. To start the test run the next line in your terminal:
