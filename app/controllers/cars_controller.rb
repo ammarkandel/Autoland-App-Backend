@@ -1,5 +1,6 @@
 class CarsController < ApplicationController
-  # GET /cars
+  before_action :authenticate_user, except: [:index]
+
   def index
     @cars = Car.all
 
