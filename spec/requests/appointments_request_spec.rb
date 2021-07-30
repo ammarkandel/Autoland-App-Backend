@@ -39,10 +39,10 @@ RSpec.describe 'Appointments', type: :request do
   end
 
   describe 'DELETE /appointments/:id' do
-     before { delete "/appointments/#{appointments_id}.json" }
+    before { delete "/appointments/#{appointments_id}.json" }
 
-     it 'Delete done successfuly' do
-       expect(response).to have_http_status(:success)
-     end
+    it 'Delete done successfuly' do
+      expect(response).to have_http_status(:success)
+    end
   end
 end
