@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :appointments, only: [:create]
+  resources :appointments, only: [:create, :destroy]
   resources :cars, only: [:index]
 
   get '/user_appointments', to: 'appointments#index'
