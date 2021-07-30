@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Appointments', type: :request do
   let!(:appointments) { FactoryBot.create_list(:appointment, 5) }
+  let!(:appointments_id) { appointments.first.id }
 
   describe 'GET appointments' do
     before { get '/user_appointments.json' }
@@ -36,4 +37,12 @@ RSpec.describe 'Appointments', type: :request do
       expect(JSON.parse(response.body)['car_id']).to eq(1)
     end
   end
+
+  describe 'DELETE /appointments/:id' do
+     before { delete "/appointments/#{appointments_id}.json" }
+
+     it 'Delete done successfuly' do
+       expect(response).to have_http_status(:success)
+     end
+   end
 end
