@@ -44,5 +44,5 @@ RSpec.describe 'Appointments', type: :request do
      it 'Delete done successfuly' do
        expect(response).to have_http_status(:success)
      end
-   end
+  end
 end
