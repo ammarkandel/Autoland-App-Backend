@@ -4,7 +4,7 @@
 
 ### This is the api to support the front end with data.
 
-## How to run this project
+## How to run this project:
 
 - Install Ruby.
 - Install Ruby on Rails.
