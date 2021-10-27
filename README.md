@@ -2,7 +2,7 @@
 
 ## What it does
 
-### This is the api to support the front end with data.
+### This is the api to support the frontend with data.
 
 ## How to run this project
 
@@ -17,7 +17,7 @@
 - Run `rails server`
 - Go to `http:localhost:3001`
 
-## Front end repo
+## Frontend repo :
 
 `https://github.com/ammarkandel/Autoland-App-Frontend`
 
@@ -35,9 +35,6 @@ The code includes unit testing using RSpec. To start the test run the next line 
 - Twitter: [@AmmarQandel](https://twitter.com/AmmarQandel)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ammar-kandel-7b4100193/)
 
-## Contributing
-
-This is a project for educational purposes only. We are not accepting contributions.
 
 ## Show your support
 
